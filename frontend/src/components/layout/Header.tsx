@@ -54,44 +54,6 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
-
-            {isAuthenticated ? (
-              <>
-                {user?.role === 'admin' && (
-                  <Link
-                    href="/admin"
-                    className="flex items-center text-gray-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition"
-                  >
-                    <Settings className="mr-1 h-4 w-4" />
-                    Admin
-                  </Link>
-                )}
-                <button
-                  onClick={logout}
-                  className="flex items-center text-gray-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition"
-                >
-                  <LogOut className="mr-1 h-4 w-4" />
-                  Logout
-                </button>
-              </>
-            ) : (
-              <>
-                <Link
-                  href="/login"
-                  className="flex items-center text-gray-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition"
-                >
-                  <LogIn className="mr-1 h-4 w-4" />
-                  Login
-                </Link>
-                <Link
-                  href="/register"
-                  className="flex items-center bg-primary-600 text-white hover:bg-primary-700 px-4 py-2 rounded-md text-sm font-medium transition"
-                >
-                  <UserPlus className="mr-1 h-4 w-4" />
-                  Register
-                </Link>
-              </>
-            )}
           </nav>
         </div>
       </div>
