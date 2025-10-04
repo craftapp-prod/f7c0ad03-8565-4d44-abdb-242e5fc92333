@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  basePath: '/customer/f7c0ad03-8565-4d44-abdb-242e5fc92333',
-  assetPrefix: '/customer/f7c0ad03-8565-4d44-abdb-242e5fc92333',
-  reactStrictMode: true,
-  eslint: {
+const nextConfig: NextConfig = {eslint: {
     ignoreDuringBuilds: true,
   },
   images: {
@@ -30,9 +26,7 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
-  output: "export",
-  trailingSlash: true,
-  distDir: "out",
-};
+  output: "standalone",
+  trailingSlash: true,};
 
 export default nextConfig;
