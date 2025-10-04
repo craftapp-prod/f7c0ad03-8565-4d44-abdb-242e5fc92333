@@ -6,4 +6,4 @@ repository_url = "https://github.com/craftapp-prod/f7c0ad03-8565-4d44-abdb-242e5
 branch = "master"
 db_password = "emamalim-3c71_password"
 db_username = "postgres"
-db_name = "emamalim-3c71_db"
+db_name = "emamalim3c71"
